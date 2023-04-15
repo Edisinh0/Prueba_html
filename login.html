@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio de sesion</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Pasteleria deliciosa</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="catalogo.html">Nuestro catalogo</a></li>
+				<li><a href="registro.html">Registrate</a></li>
+                <li><a href="pedido.html">Haz tu pedido</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+			
+			</ul>
+		</nav>
+	</header>
+</body>
+  
+<div class="contacto_form">
+        
+    <div class="formulario">      
+      <h1>Inicio de Sesion</h1>
+        <h3>Te damos la bienvenida nuevamente!</h3>
+
+          <form action="index.html" method="post">
+                <p>
+                  <label for="email" class="colocar_email">Correo electronico
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+                <p>
+                  <label for="website" class="colocar_contraseña">contrasena
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="password" name="introducir_contrasena" id="contrasena" required="obligatorio" placeholder="Escribe tu contrasena">
+                </p> 
+
+                <script>
+                  function bienvenida(){
+                    alert("INICIASTE SESION!");
+                  }
+                </script>
+                
+                <button type="submit" onclick="bienvenida()" id="enviar" ><p>Iniciar Sesion</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>
+                <p>Unete a nosotros y <a href="registro.html">Registrate</a></p>
+            
+          </form>
+    </div>  
+  </div>
+  <footer>
+    <p>&copy; 2023 Pasteleria deliciosa</p>
+</footer>
+</html>

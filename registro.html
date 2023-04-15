@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registro</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Pasteleria deliciosa</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="catalogo.html">Nuestro catalogo</a></li>
+				<li><a href="pedido.html">Haz tu pedido</a></li>
+        <li><a href="login.html">Inicia Sesion</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+	</header>
+  
+          <div class="contacto_form">
+        
+            <div class="formulario">      
+              <h1>Formulario de registro</h1>
+                <h3>registrate para comprar y recibir descuentos.</h3>
+        
+                  <form action="index.html" method="post">
+                        <p>
+                          <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+                      
+                        <p>
+                          <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                    
+                        <p>
+                          <label for="telefone" class="colocar_telefono">Teléfono
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="number" name="introducir_telefono" id="telefono" required="obligatorio" placeholder="Escribe tu teléfono">
+                        </p>    
+                      
+                        <p>
+                          <label for="contrasena" class="colocar_contrasena">contrasena
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="password" name="introducir_contraseña" id="contraseña" required="obligatorio" placeholder="Escribe tu contraseña">
+                        </p> 
+
+                        <p>
+                            <label for="contrasena" class="colocar_contrasena">confirmar contrasena
+                                <span class="obligatorio">*</span>
+                            </label>
+                              <input type="password" name="introducir_contraseña" id="contraseña" required="obligatorio" placeholder="confirma tu contraseña">
+                          </p> 
+                          
+                        <script>
+                          function bienvenida(){
+                            alert("TE HAZ REGISTRADO!");
+                          }
+                        </script>
+                        
+                        <button type="submit" onclick="bienvenida()" id="enviar" ><p>REGISTRATE</p></button>
+        
+                        <p class="aviso">
+                          <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>
+                        <p>¿Ya tienes una cuenta? <a href="login.html">Inicia Sesion</a></p>
+                    
+                  </form>
+            </div>  
+          </div>
+          <footer>
+            <p>&copy; 2023 Pasteleria deliciosa</p>
+        </footer>
+</body>
+</html>
