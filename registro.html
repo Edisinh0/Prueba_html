@@ -74,19 +74,38 @@
                           <label for="contrasena" class="colocar_contrasena">contrasena
                             <span class="obligatorio">*</span>
                           </label>
-                            <input type="password" name="introducir_contraseña" id="contraseña" required="obligatorio" placeholder="Escribe tu contraseña">
+                            <input type="password" name="introducir_contraseña" id="contraseña1" required="obligatorio" placeholder="Escribe tu contraseña">
                         </p> 
 
                         <p>
                             <label for="contrasena" class="colocar_contrasena">confirmar contrasena
                                 <span class="obligatorio">*</span>
                             </label>
-                              <input type="password" name="introducir_contraseña" id="contraseña" required="obligatorio" placeholder="confirma tu contraseña">
+                              <input type="password" name="introducir_contraseña" id="contraseña2" required="obligatorio" placeholder="confirma tu contraseña">
                           </p> 
                           
                         
-                          <input id="button" type="submit" name="commit" value="REGISTRATE"/>
-        
+                          <input id="button" type="button" onclick="bienvenida()" name="commit" value="ENVIAR"/>
+                <script>
+                  function bienvenida(){
+                    var nombre = document.getElementById("nombre").value
+                    var email = document.getElementById("email").value
+                    var telefone = document.getElementById("telefono").value
+                    var contrasena1 = document.getElementById("contraseña1").value
+                    var contrasena2 = document.getElementById("contraseña2").value
+                    if (contrasena1 != contrasena2){
+                      alert("LAS CONTRASEÑAS NO COINCIDEN!")
+                    }
+                      
+                    else if (nombre == "" || email == "" || telefone == "" || contrasena1 == "" || contrasena2 == ""){
+                      alert("por favor, rellena todos los campos")
+                    }else{
+                      alert("TE HAZ REGISTRADO CON EXITO!")
+                      window.location.href = "index.html";
+                    }
+                  }
+                
+                </script>
                         <p class="aviso">
                           <span class="obligatorio"> * </span>los campos son obligatorios.
                         </p>

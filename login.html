@@ -62,8 +62,20 @@
                     <input type="password" name="introducir_contrasena" id="contraseña" required="obligatorio" placeholder="Escribe tu contrasena">
                 </p> 
 
-                <input id="button" type="submit" name="commit" value="INICIAR SESION"/>
-
+                <input id="button" type="button" onclick="bienvenida()" name="commit" value="INICIAR SESION"/>
+				<script>
+                    
+					function bienvenida(){
+						var email = document.getElementById("email").value
+						var contrasena = document.getElementById("contraseña").value
+						if (email == "" || contrasena == ""){
+							alert("por favor, rellena todos los campos")
+						}else{
+							alert("SESION INICIADA!")
+							window.location.href = "index.html";
+						}
+					}
+                  </script>
                 <p class="aviso">
                   <span class="obligatorio"> * </span>los campos son obligatorios.
                 </p>

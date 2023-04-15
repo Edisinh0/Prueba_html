@@ -85,11 +85,25 @@
                   <label for="mensaje" class="colocar_mensaje">Mensaje
                     <span class="obligatorio">*</span>
                   </label>                     
-               <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                 </p>                    
+              <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                </p>                    
                 
-                 <input id="button" type="submit" name="commit" value="ENVIAR"/>
-              
+                <input id="button" type="button" onclick="bienvenida()" name="commit" value="ENVIAR"/>
+                <script>
+                  function bienvenida(){
+                    var nombre = document.getElementById("nombre").value
+                    var email = document.getElementById("email").value
+                    var telefone = document.getElementById("telefono").value
+                    var asunto = document.getElementById("asunto").value
+                    var mensaje = document.getElementById("mensaje").value
+                    if (nombre == "" || email == "" || asunto == "" || mensaje == ""){
+                      alert("por favor, rellena todos los campos")
+                    }else{
+                      alert("MENSAJE ENVIADO!")
+                      window.location.href = "index.html";
+                    }
+                  }
+                </script>
                 <p class="aviso">
                   <span class="obligatorio"> * </span>los campos son obligatorios.
                 </p>          
