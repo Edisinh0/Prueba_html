@@ -93,12 +93,13 @@
                     var telefone = document.getElementById("telefono").value
                     var contrasena1 = document.getElementById("contraseña1").value
                     var contrasena2 = document.getElementById("contraseña2").value
+                    var expr = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/
                     if (contrasena1 != contrasena2){
                       alert("LAS CONTRASEÑAS NO COINCIDEN!")
                     }
                       
-                    else if (nombre == "" || email == "" || telefone == "" || contrasena1 == "" || contrasena2 == ""){
-                      alert("por favor, rellena todos los campos")
+                    else if (nombre == "" || email == "" || !expr.test(email) || telefone == "" || contrasena1 == "" || contrasena2 == ""){
+                      alert("por favor, rellena todos los campos o verifique su correo")
                     }else{
                       alert("TE HAZ REGISTRADO CON EXITO!")
                       window.location.href = "index.html";

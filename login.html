@@ -68,8 +68,9 @@
 					function bienvenida(){
 						var email = document.getElementById("email").value
 						var contrasena = document.getElementById("contraseña").value
-						if (email == "" || contrasena == ""){
-							alert("por favor, rellena todos los campos")
+						var expr = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/
+						if (email == "" || !expr.test(email) || contrasena == ""){
+							alert("por favor, rellena todos los campos o valida tu correo")
 						}else{
 							alert("SESION INICIADA!")
 							window.location.href = "index.html";
