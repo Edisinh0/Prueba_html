@@ -2,19 +2,36 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+	background-image:url("img/chocolate-1509589_1920.jpg");
 }
 
 header {
-	background-color: #f1c40f;
-	color: #fff;
+	background-color: #aaaaaa7c;
+	color: #000000;
 	padding: 20px;
-}
+	width: auto; 
+	height: 260px;
+	margin: 10px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;   
+	padding-left: 30px; 
+  }
+
 
 h1 {
 	font-size: 36px;
 	margin: 0;
 }
+.center {
+	text-align: center;
+	font-size: xx-large;
+}
 
+#para1 {
+	text-align: center;
+	font-size: larger;
+}
 nav ul {
 	list-style: none;
 	margin: 0;
@@ -27,42 +44,134 @@ nav li {
 }
 
 nav a {
-	color: #fff}
-
-/*boton de busqueda*/
-input{
-	background-color: #fbfbfb; 
-	width: 408px; 
-	height: 40px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: black; 
-	margin-top: 10px;  
-	padding-left: 10px;
-	margin-bottom: 20px; 
+	color: black;
 }
 
-button{
-	height: 45px; 
-	padding-left: 5px;
-	padding-right: 5px;   
-	margin-bottom: 20px; 
-	margin-top: 10px;   
-	text-transform: uppercase;
-	background-color: blue; 
-	border-color: black; 
-	border-style: solid; 
-	border-radius: 10px;  
-	width: 420px;   
-	cursor: pointer;
-	}
 
-button:hover {
+/* ESTILO DE CONTACTO */ 
+
+.contacto_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: black; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: black; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+#button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: blue; 
+  border-color: black; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+#button:hover {
 	background-color:cornflowerblue;
 	transform: translateY(-2px);
-	}
+  }
 
-button p{
-	color: #fff; 
+
+#button p{
+  color: #fff; 
+}
+
+
+span{
+  color: black; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: red;  
+}
+
+
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: black;
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid red;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid red;
 }

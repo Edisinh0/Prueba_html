@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Inicio de sesion</title>
+	<meta charset="UTF-8">
+	<title>Venta de Pasteles</title>
+	<!-- CSS PERSONALIZADO -->
 	<link rel="stylesheet" href="style.css">
+	<!-- CSS DE BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
+
 <body>
-	<header>
-		<h1>Pasteleria deliciosa</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="catalogo.html">Nuestro catalogo</a></li>
-				<li><a href="registro.html">Registrate</a></li>
-                <li><a href="pedido.html">Haz tu pedido</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-			
+
+	<!-- BARRA DE NAVEGACION -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="index.html">Venta de Pasteles</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Contacto.html">Contacto</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="catalogo.html">Catalogo</a>
+				</li>
+			</ul></div>
+				<div>
+				<li class="nav-item">
+					<a class="nav-link" href="login.html">Inicio de Sesion</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="registro.html">Registro</a>
+				</li>
 			</ul>
-		</nav>
-	</header>
-</body>
+		</div>
+	</nav>
+
+
   
 <div class="contacto_form">
         
@@ -34,19 +56,13 @@
                     <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
                 </p>
                 <p>
-                  <label for="website" class="colocar_contraseña">contrasena
+                  <label for="contrasena" class="colocar_contraseña">contrasena
                     <span class="obligatorio">*</span>
                   </label>
-                    <input type="password" name="introducir_contrasena" id="contrasena" required="obligatorio" placeholder="Escribe tu contrasena">
+                    <input type="password" name="introducir_contrasena" id="contraseña" required="obligatorio" placeholder="Escribe tu contrasena">
                 </p> 
 
-                <script>
-                  function bienvenida(){
-                    alert("INICIASTE SESION!");
-                  }
-                </script>
-                
-                <button type="submit" onclick="bienvenida()" id="enviar" ><p>Iniciar Sesion</p></button>
+                <input id="button" type="submit" name="commit" value="INICIAR SESION"/>
 
                 <p class="aviso">
                   <span class="obligatorio"> * </span>los campos son obligatorios.
@@ -59,4 +75,5 @@
   <footer>
     <p>&copy; 2023 Pasteleria deliciosa</p>
 </footer>
+</body>
 </html>

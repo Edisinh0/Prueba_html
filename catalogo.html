@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-		<meta charset="UTF-8">
-		<title>Venta de Pasteles</title>
-		<!-- CSS DE BOOTSTRAP -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-		<!-- CSS PERSONALIZADO -->
-		<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<title>Venta de Pasteles</title>
+	<!-- CSS PERSONALIZADO -->
+	<link rel="stylesheet" href="style.css">
+	<!-- CSS DE BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
-	<header>
-		<nav>
+	
 	<!-- BARRA DE NAVEGACION -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Venta de Pasteles</a>
+		<a class="navbar-brand" href="index.html">Venta de Pasteles</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a class="nav-link" href="inicio.html">Inicio</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Productos</a>
+					<a class="nav-link" href="index.html">Inicio</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="Contacto.html">Contacto</a>
@@ -32,11 +27,10 @@
 				<li class="nav-item">
 					<a class="nav-link" href="catalogo.html">Catalogo</a>
 				</li>
+			</ul></div>
+				<div>
 				<li class="nav-item">
 					<a class="nav-link" href="login.html">Inicio de Sesion</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="pedido.html">Pedido</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="registro.html">Registro</a>
@@ -45,37 +39,109 @@
 		</div>
 	</nav>
 
-		</nav>
-	</header>
-	<main>
-			<h2 class="center">Nuestro Catalogo</h2>
-            <br>
-		    <center><input type="search" placeholder="BUSCAR PRODUCTO" aria-label="BUSCADOR">
-		    <button type="submit">BUSCAR</button></center>
-            <br>
-			<h2>Nuestros productos</h2>
-			<ul>
-				<li>
-					<img src="img/pastel1.jpg" alt="Pastel de chocolate">
-					<h3>Pastel de chocolate</h3>
-					<p>Elaborado con chocolate de alta calidad y decorado con frutas frescas.</p>
-					<p class="precio">$3500</p>
-				</li>
-				<li>
-					<img src="img/pastel2.jpg" alt="Tarta de fresas">
-					<h3>Tarta de fresas</h3>
-					<p>Elaborada con fresas frescas y cubierta con crema chantilly.</p>
-					<p class="precio">$3000</p>
-				</li>
-				<li>
-					<img src="img/pastel3.jpg" alt="Cupcakes variados">
-					<h3>Cupcakes variados</h3>
-					<p>Disfruta de nuestros cupcakes con diferentes sabores y decoraciones.</p>
-					<p class="precio">$2000 c/u</p>
-				</li>
-			</ul>
+		<!-- SECCION DE PRODUCTOS -->
+	<section class="container my-5">
+		<h2 class="text-center my-5">Nuestro Catalogo</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<img src="img/pastel1.jpg" alt="Pastel de chocolate" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Pastel de chocolate</h5>
+						<p class="card-text">Delicioso pastel de chocolate con un rico sabor y textura suave.</p>
+						<a href="#" class="btn btn-primary">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<img src="img/pastel2.jpg" alt="Pastel de fresa" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Pastel de fresa</h5>
+						<p class="card-text">Delicioso pastel de fresa con un rico sabor y textura suave.</p>
+						<a href="#" class="btn btn-primary">Comprar</a>
+					</div>
+				</div>
+			</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="img/pastel3.jpg" alt="cupcakes" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">cupcakes</h5>
+							<p class="card-text">Deliciosos cupcakes rellenos con nutella y glaseado de vainilla.</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+				
 		</section>
-	</main>
+		<section class="container my-5">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<img src="img/pastel5.jpg" alt="queque" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">	Queque</h5>
+							<p class="card-text">Queque de zanahorias con azucar flor para endulzar tu paladar.</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="img/pastel6.jpg" alt="QuequeChocolate" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">Queque de chocolate</h5>
+							<p class="card-text">Riquisimo queque con relleno de chocolate y rallado de limon.</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+					<div class="col-md-4">
+						<div class="card">
+							<img src="img/pastel1.jpg" alt="Pastel de chocolate" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Pastel de chocolate</h5>
+								<p class="card-text">Delicioso pastel de chocolate con un rico sabor y textura suave.</p>
+								<a href="#" class="btn btn-primary">Comprar</a>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+				<section class="container my-5">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="img/pastel12.jpg" alt="Torta" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Torta individual</h5>
+								<p class="card-text" >Deliciosa torta de chocolate individual con salsa de manjar. </p>
+								<a href="#" class="btn btn-primary">Comprar</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<img src="img/pastel13.jpg" alt="Pastel de pistacho" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">Torta de pistacho</h5>
+									<p class="card-text">Sabrosa torta de pistacho con trozos de durazno.</p>
+									<a href="#" class="btn btn-primary">Comprar</a>
+								</div>
+							</div>
+						</div>
+							<div class="col-md-4">
+								<div class="card">
+									<img src="img/pastel11.jpg" alt="Pastel de crema" class="card-img-top">
+									<div class="card-body">
+										<h5 class="card-title">Torta de crema</h5>
+										<p class="card-text">Tierna torta de crema con sabor especial.</p>
+										<a href="#" class="btn btn-primary">Comprar</a>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
 	<footer>
 		<p>&copy; 2023 Pasteleria deliciosa</p>
 	</footer>

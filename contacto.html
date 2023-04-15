@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Formulario de contacto</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Venta de Pasteles</title>
+	<!-- CSS PERSONALIZADO -->
+	<link rel="stylesheet" href="style.css">
+	<!-- CSS DE BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 
 <body id="contacto">
-    <header>
-		<h1>Pasteleria deliciosa</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="pedido.html">Haz tu pedido</a></li>
-        <li><a href="catalogo.html">Nuestro catalogo</a></li>
-				<li><a href="login.html">Inicia Sesion</a></li>
-				<li><a href="registro.html">Registrate</a></li>
-				
+
+	<!-- BARRA DE NAVEGACION -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="index.html">Venta de Pasteles</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Contacto.html">Contacto</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="catalogo.html">Catalogo</a>
+				</li>
+			</ul></div>
+				<div>
+				<li class="nav-item">
+					<a class="nav-link" href="login.html">Inicio de Sesion</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="registro.html">Registro</a>
+				</li>
 			</ul>
-		</nav>
-	</header>
-  
+		</div>
+	</nav>
+
+
   <div class="contacto_form">
 
     <div class="formulario">      
@@ -57,7 +78,7 @@
                   <label for="asunto" class="colocar_asunto">Asunto
                     <span class="obligatorio">*</span>
                   </label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                    <input type="text" name="introducir_asunto" id="asunto" required="obligatorio" placeholder="Escribe un asunto">
                 </p>    
               
                 <p>
@@ -67,13 +88,7 @@
                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
                  </p>                    
                 
-                  <script>
-                    function bienvenida(){
-                    alert("MENSAJE ENVIADO!");
-                    }
-                  </script>
-                              
-                <button type="submit" onclick="bienvenida()" id="enviar" ><p>ENVIAR</p></button>
+                 <input id="button" type="submit" name="commit" value="ENVIAR"/>
               
                 <p class="aviso">
                   <span class="obligatorio"> * </span>los campos son obligatorios.
