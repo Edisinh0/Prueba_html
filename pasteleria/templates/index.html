@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+	{% load static %}
 	<meta charset="UTF-8">
 	<title>Venta de Pasteles</title>
 	<!-- CSS PERSONALIZADO -->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="{% static 'style.css' %}">
 	<!-- CSS DE BOOTSTRAP -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	
 </head>
 <body>
 
+	{% for alumno in alumnos %} 
+
+		{{alumno.rut}}, {{alumno.nombre}}, {{alumno.apellido_paterno}},
+		{{alumno.apellido_materno}}, {{alumno.id_genero.genero}} 
+
+	{% endfor %}
+
 	<!-- BARRA DE NAVEGACION -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="index.html">Venta de Pasteles</a>
+		<a class="navbar-brand" href="{% url 'Index' %}">Venta de Pasteles</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Inicio</a>
+					<a class="nav-link" href="{% url 'Index' %}">Inicio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="Contacto.html">Contacto</a>
+					<a class="nav-link" href="{% url 'Contacto' %}">Contacto</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="catalogo.html">Catalogo</a>
+					<a class="nav-link" href="{% url 'catalogo' %}">Catalogo</a>
 				</li>
 			</ul></div>
 				<div>
 				<li class="nav-item">
-					<a class="nav-link" href="login.html">Inicio de Sesion</a>
+					<a class="nav-link" href="{% url 'login' %}">Inicio de Sesion</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="registro.html">Registro</a>
+					<a class="nav-link" href="{% url 'registro' %}">Registro</a>
 				</li>
 			</ul>
 		</div>
@@ -53,13 +62,13 @@
 	<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
 		  <div class="carousel-item active">
-			<img src="img/pastel4.jpg" class="d-block w-100" alt="pastel4" width="10" height="300">
+			<img src="{% static 'img/pastel4.jpg' %}" class="d-block w-100" alt="pastel4" width="10" height="300">
 		  </div>
 		  <div class="carousel-item">
-			<img src="img/pastel7.jpg" class="d-block w-100" alt="pastel7" width="10" height="300">
+			<img src="{% static 'img/pastel7.jpg' %}" class="d-block w-100" alt="pastel7" width="10" height="300">
 		  </div>
 		  <div class="carousel-item">
-			<img src="img/pastel8.jpg" class="d-block w-100" alt="pastel8" width="10" height="300">
+			<img src="{% static 'img/pastel8.jpg' %}" class="d-block w-100" alt="pastel8" width="10" height="300">
 		  </div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -78,7 +87,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="card">
-					<img src="img/pastel1.jpg" alt="Pastel de chocolate" class="card-img-top">
+					<img src="{% static 'img/pastel1.jpg' %}" alt="Pastel de chocolate" class="card-img-top">
 					<div class="card-body">
 						<h5 class="card-title">Pastel de chocolate</h5>
 						<p class="card-text">Delicioso pastel de chocolate con un rico sabor y textura suave.</p>
@@ -88,7 +97,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card">
-					<img src="img/pastel2.jpg" alt="Pastel de fresa" class="card-img-top">
+					<img src="{% static 'img/pastel2.jpg' %}" alt="Pastel de fresa" class="card-img-top">
 					<div class="card-body">
 						<h5 class="card-title">Pastel de fresa</h5>
 						<p class="card-text">Delicioso pastel de fresa con un rico sabor y textura suave.</p>
@@ -98,7 +107,7 @@
 			</div>
 				<div class="col-md-4">
 					<div class="card">
-						<img src="img/pastel3.jpg" alt="Pastel de fresa" class="card-img-top">
+						<img src="{% static 'img/pastel3.jpg' %}" alt="Pastel de fresa" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">Pastel de fresa</h5>
 							<p class="card-text">Delicioso pastel de fresa con un rico sabor y textura suave.</p>
