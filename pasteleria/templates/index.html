@@ -12,13 +12,6 @@
 </head>
 <body>
 
-	{% for alumno in alumnos %} 
-
-		{{alumno.rut}}, {{alumno.nombre}}, {{alumno.apellido_paterno}},
-		{{alumno.apellido_materno}}, {{alumno.id_genero.genero}} 
-
-	{% endfor %}
-
 	<!-- BARRA DE NAVEGACION -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<a class="navbar-brand" href="{% url 'Index' %}">Venta de Pasteles</a>
@@ -53,7 +46,7 @@
 		<div class="container">
 			<h1 class="display-4">¡LOS MEJORES PASTELES A TU ALCANCE!</h1>
 			<p class="lead">¡Elige entre nuestra gran variedad de sabores y disfruta de la mejor calidad del mercado!</p>
-			<a href="catalogo.html" class="btn btn-primary btn-lg">Comprar Ahora</a>
+			<a href="{% url 'catalogo' %}" class="btn btn-primary btn-lg">Comprar Ahora</a>
 		</div>
 	</header>
 
